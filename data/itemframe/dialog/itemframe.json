@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Item Frame",
+  "external_title": "Item Frame",
+  "actions": [
+    {
+      "label": "Toggle Visibility",
+      "tooltip": "Toggles if the nearest Item Frame is invisible",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger itemframe_invisible"
+      }
+    },
+    {
+      "label": "Toggle Fixed",
+      "tooltip": "Toggles if the nearest Item Frame is fixed",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger itemframe_fixed"
+      }
+    },
+    {
+      "label": "Reset",
+      "tooltip": "Resets the nearest Item Frame to be visible and not locked",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger itemframe_reset"
+      }
+    }
+  ]
+}
