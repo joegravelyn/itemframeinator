@@ -1,32 +1,31 @@
-# Armor Eraser <img width="64" height="64" alt="pack" src="https://github.com/user-attachments/assets/f8bf8d23-757f-419c-929d-eb57dcf0c096" />
+# Item Frame-Inator
 
-Minecraft data pack to make player armor invisible when wearing.
+Minecraft data pack to give control over item frame properties: Fixed, Invisibile, and ItemRotation.
 
-### :clipboard: How To Erase Your Armor
-1. Hold a piece of player armor in your mainhand.
-2. Do one of the following:
-   1. Press G and select `Armor Eraser` to view in game menu. Then select `Erase Armor`.
-   2. Run `/trigger ae_erase`.
-<br>
+From https://minecraft.wiki:
+- <img height="16" src="https://minecraft.wiki/images/NbtSprite_boolean.png"> **Fixed**: `1`, or `0` (`true`/`false`) - If `true`: the item frame does not drop when it has no support block, it can not be moved by pistons, and it won't take damage (except from creative players). An item cannot be placed in or removed from a fixed item frame. The item in a fixed item frame (if any) can not be rotated.
+- <img height="16" src="https://minecraft.wiki/images/NbtSprite_boolean.png"> **Invisible**: `1`, or `0` (`true`/`false`) - Whether the item frame (background) is invisible. An item or map inside an invisible item frame is still visible.
+- <img height="16" src="https://minecraft.wiki/images/NbtSprite_byte.png"> **ItemRotation**: The current angle or rotation of the item, as a multiple of 45 degrees, going clockwise. `0` means the item is upright, `1` means the item is turned 45 degrees clockwise from the upright orientation.​[more information needed] This value can only ever be between `0` and `7`, just like its redstone output when measured with a comparator.
 
-### :clipboard: How To Un-Erase Your Armor (i.e. make it visibile when wearing)
-1. Hold a piece of player armor in your mainhand.
-2. Do one of the following:
-   1. Press G and select `Armor Eraser` to view in game menu. Then select `Un-Erase Armor`.
-   2. Run `/trigger ae_unerase`.
-<br>
+### Commands
+- `/trigger itemframeinator_reset` - Resets `Invisible` and `Fixed` properties (i.e. makes the item frame visibile and unlocked)
+- `/trigger itemframeinator_invisible` - Toggles `Invisible` property
+- `/trigger itemframeinator_fixed` - Toggles `Fixed` property
+- `/trigger itemframeinator_rotation set #` - Sets `ItemRotation` to a number between 0 and 7
+- `/trigger itemframeinator_reset_rotation` - Resets `ItemRotation` to 0 (default orientation)
 
-### :camera: Gallery
-Before Armor Eraser
+---
+### Gallery
+Invisible Item Frames
 
-<img width="231" height="146" alt="before_armorerase" src="https://github.com/user-attachments/assets/78fffd00-ad79-4dae-9667-66872bc290c2" /><br>
+<img width="551" src="https://raw.githubusercontent.com/joegravelyn/itemframeinator/refs/heads/main/_assets/apple.png" />
 
-After Armor Eraser
+<img width="551" src="https://raw.githubusercontent.com/joegravelyn/itemframeinator/refs/heads/main/_assets/chest.png" /><br>
 
-<img width="231" height="146" alt="after_armorerase" src="https://github.com/user-attachments/assets/b18665ce-9743-45ef-a2f0-1a84dcd2a571" /><br>
+Fixed Item Frames
+
+<img width="551" src="https://raw.githubusercontent.com/joegravelyn/itemframeinator/refs/heads/main/_assets/floating.png" />
 
 In Game Menu
 
-<img width="548" height="146" alt="menu" src="https://github.com/user-attachments/assets/90f3117d-a84b-479f-b6fd-bf55b9213506" /><br>
-
-### **Note:** This datapack has only been tested with all Vanilla player armor. Trying to use this for custom armor may lead to undesired reesults.
+<img width="551" alt="menu" src="https://raw.githubusercontent.com/joegravelyn/itemframeinator/refs/heads/main/_assets/menu.png" />
