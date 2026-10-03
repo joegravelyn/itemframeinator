@@ -1,0 +1,6 @@
+
+scoreboard objectives add itemframeinator_reset trigger
+scoreboard objectives add itemframeinator_invisible trigger
+scoreboard objectives add itemframeinator_fixed trigger
+scoreboard objectives add itemframeinator_rotation trigger
+scoreboard objectives add itemframeinator_reset_rotation trigger

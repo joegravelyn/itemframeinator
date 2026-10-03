@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Item Frame-Inator",
+  "external_title": "Item Frame-Inator",
+  "actions": [
+    {
+      "label": "Toggle Visibility",
+      "tooltip": "Toggles if the Item Frame is invisible",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger itemframeinator_invisible"
+      }
+    },
+    {
+      "label": "Toggle Fixed",
+      "tooltip": "Toggles if the Item Frame is fixed",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger itemframeinator_fixed"
+      }
+    },
+    {
+      "label": "Reset",
+      "tooltip": "Resets the Item Frame to be visible and not locked",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger itemframeinator_reset"
+      }
+    },
+    {
+      "label": "Reset Rotation",
+      "tooltip": "Resets the rotation of the Item Frame",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger itemframeinator_reset_rotation"
+      }
+    }
+  ]
+}
